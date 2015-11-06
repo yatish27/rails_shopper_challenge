@@ -1,0 +1,77 @@
+.intro {
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid $section-seperator-color;
+
+  .logo{
+    img{
+      max-height: 70px;
+      min-height: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.4em;
+    padding-bottom: 20px;
+    text-align: center;
+    text-shadow: none;
+    margin-top: 0px;
+  }
+
+
+  .login {
+    font-weight: 400;
+    display: block;
+    font-size: 12px;
+    color:$primary-color;
+    text-transform: none;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 15px;
+  }
+}
+
+.work-instacart {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid $section-seperator-color;
+  .perks {
+    padding: 25px;
+    font-size: 16px;
+  }
+  .icon {
+    font-size: 60px;
+    color: $primary-color;
+  }
+}
+
+.testimonials {
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #E6E6E6;
+  .heart{
+    color: #60ab59;
+  }
+  .quote {
+    padding: 25px;
+    font-size: 16px;
+  }
+  .quote-icon {
+    font-size: 40px;
+    padding-top: 20px;
+    color:$primary-color;
+  }
+}
+
+.action {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #E6E6E6;
+}

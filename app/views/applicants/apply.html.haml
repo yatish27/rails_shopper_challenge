@@ -1,0 +1,6 @@
+//If it needs to be extended for multistep form, there will be case for each state
+- case current_applicant.state
+- when 'background_check'
+  = render 'applicants/steps/background_check'
+- when 'complete'
+  = render 'applicants/steps/complete'

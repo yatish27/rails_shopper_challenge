@@ -1,0 +1,59 @@
+.intro
+  .grid
+    .logo
+      = image_tag(asset_path("logo.png"))
+    .section-title
+      Earn Money Shopping or Delivering Groceries
+    %h2
+      A fun and flexible way to earn money on your own time!
+    = link_to('Apply Now', new_applicant_path, class: 'cta')
+    = link_to('View Application', login_path, class: 'login')
+
+
+.work-instacart
+  .grid
+    .section-title
+      Why Work At Instacart?
+    .row
+      .col-md-4.perks
+        %i.fa.fa-cogs.icon
+        %h4
+          Flexible
+        Instacart provides great flexibility in work hours. You can work either full-time
+        or part time at your own convenience
+
+      .col-md-4.perks
+        %i.fa.fa-magic.icon
+        %h4
+          Fun
+        It is great fun to be shopper for the Instacart family. You can enjoy and have fun at work
+
+      .col-md-4.perks
+        %i.fa.fa-usd.icon
+        %h4
+          Money
+        Instacart compensates shoppers very generously. Being the field players for operations, Instacart makes
+        sure you are happy.
+
+.testimonials
+  .grid
+    .section-title
+      Shoppers
+      %i.fa.fa-heart-o.heart
+      Instacart
+
+    .col-md-6.quote
+      %i.fa.fa-quote-left.quote-icon
+      Instacart has been a great place to work with great flexibility on scheduling and great pay.
+      I've really learned a lot about becoming an independent hard worker and taking pride in picking
+      out great products for our customers!
+    .col-md-6.quote
+      %i.fa.fa-quote-left.quote-icon
+      I started out part-time and now this is what I do! If you would have told me a job existed where I could
+      shop all day, make my own schedule, and explore Boston, I would not have believed you... but I found it
+
+.action
+  .grid
+    .section-title.spacing-2
+      Join Instacart Today
+    = link_to('Apply Now', new_applicant_path, class: 'cta')

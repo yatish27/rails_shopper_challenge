@@ -1,0 +1,11 @@
+.signup
+  %h1
+    Edit Information
+
+  - if current_applicant.errors.present?
+    .col-md-4.col-md-offset-4
+      - current_applicant.errors.full_messages.each do |msg|
+        %p.error
+          = msg
+
+  = render partial: "form", locals: { applicant: current_applicant }

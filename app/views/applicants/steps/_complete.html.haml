@@ -1,0 +1,15 @@
+.signup-complete
+  .col-md-8.col-md-offset-2
+    %h1
+      Application Confirmed
+    %p
+      You have successfully submitted you application for being a Shopper with Instacart.
+
+    - %w(first_name last_name phone email phone_type region).each do |attribute|
+      %ul
+        %li
+          %strong
+            = attribute.titleize
+          = current_applicant.send(attribute)
+
+    = link_to('Edit', edit_applicants_path)

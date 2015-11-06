@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title= content_for?(:title) ? yield(:title) : 'Shopper Challenge'
+
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+    %meta{:name => 'description', content: 'Shopper Challenge'}
+    %link{:href=>'https://fonts.googleapis.com/css?family=Lato:400,300', :rel=>'stylesheet', :type=>'text/css'}
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+
+
+  %body
+    %header
+      = render 'layouts/navigation'
+
+    %main{role: 'main'}
+      = yield
+

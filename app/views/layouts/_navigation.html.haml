@@ -1,0 +1,21 @@
+-# navigation styled for Bootstrap 3.0
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to image_tag(asset_path("logo.png"), class: 'navbar-brand'), root_path
+
+    - if signed_in?
+      .collapse.navbar-collapse.navbar-ex1-collapse
+        %ul.nav.navbar-nav.navbar-right
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+              = current_applicant.first_name
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                = link_to("Logout", logout_path, method: :post)

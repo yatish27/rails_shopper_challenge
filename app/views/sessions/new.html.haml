@@ -1,0 +1,15 @@
+.grid
+  .logo
+    = image_tag(asset_path("logo.png"))
+
+  .sigin-in
+    - flash.each do |name, msg|
+      %div{:class => "message-#{name.to_s == 'notice' ? 'success' : 'danger'}"}
+        %p
+          = msg
+
+    = form_tag login_path, role: "form" do
+      .form-group
+        %input.form-control{name: 'email', type: "email", placeholder: "Email", required: 'required'}
+      %button.cta{type:"submit"}
+        Submit

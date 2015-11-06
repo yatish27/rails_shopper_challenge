@@ -1,0 +1,29 @@
+.signup{
+  padding-top: 50px;
+  text-align: center;
+  p {
+    text-align: left;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+  .form-control {
+    height: 50px;
+  }
+  p.error {
+    color: $red;
+  }
+}
+
+.signup-complete {
+  p {
+    font-size: 18px;
+  }
+  ul{
+    li{
+      font-size: 16px;
+    }
+  }
+}
+

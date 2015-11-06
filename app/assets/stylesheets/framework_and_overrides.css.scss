@@ -1,0 +1,34 @@
+// import the CSS framework
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "nvd3";
+@import "font-awesome";
+
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  max-width: inherit;
+  height: 60px
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+main {
+  @extend .container;
+  background-color: #fff;
+  margin-top: 80px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+section {
+  @extend .row;
+  margin-top: 20px;
+}

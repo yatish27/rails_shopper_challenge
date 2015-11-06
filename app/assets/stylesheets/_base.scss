@@ -1,0 +1,55 @@
+//General classes
+
+.section-title {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.grid {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spacing-2 {
+  margin-bottom: 20px;
+}
+
+.cta {
+  border-radius: 3px;
+  border: 1px $base-button-border-color solid;
+  background: $base-button-color;
+  color: $white;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 0;
+  padding: 13px 60px 13px 60px;
+  text-align: center;
+  text-decoration: none;
+  line-height: normal;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%
+}
+
+a.cta {
+  @extend .cta
+}
+
+.message-danger {
+  color: red;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.message-success {
+  color: green;
+  font-size: 16px;
+  font-weight: 300;
+}
+
